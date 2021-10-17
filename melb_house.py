@@ -33,7 +33,7 @@ data['YearBuilt'] = data['YearBuilt'].apply(lambda x: round(x))
 
 
 # Exploratory Data Analysis(EDA)
-'''
+
 # Count for Type Property
 plt.figure(figsize=(10,6))
 sns.countplot(x='Type', data=data)
@@ -87,7 +87,7 @@ plt.title('Number of Property in each Region')
 plt.xticks(rotation=45)
 
 # Corelation between Price and Number of Property
-sns.pairplot(data[['Price', 'Propertycount']])'''
+sns.pairplot(data[['Price', 'Propertycount']])
 
 
 #From EDA we get some insight that Price are affected by Avaibility Rooms and Badroom2, Distance from MCB and avaibility of number porperty
